@@ -7,11 +7,33 @@
     background-color: rgb(207, 193, 193);
     font-family: 'Fira Sans', sans-serif;
     height: 100vh;
+    /* width: 500px; */
     transition: transform 0.3s ease-in;
+}
+.main{
+    width: 80vw;
+    height: 100vh;
+    /* padding: auto; */
+    margin:auto;
+     /* background-color: red; */
+     background-image: url('./portfoliobg.jpg');
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+     min-height: 100vh;
+     opacity: 1;
 }
 *{
     margin: 0;
     padding: 0;
+}
+body{
+    /* background-color: red; */
+    /* background: url("./portfoliobg.jpg") center center no-repeat; */
+    /* background-image: url("./portfoliobg.jpg"); */
+    /* object-fit: contain; */
+    /* background-size: contain; */
+    /* background-color: rgb(118, 117, 120, 1); */
+    
 }
 .sidebar nav{
    padding: 45px;
@@ -25,21 +47,37 @@
 .sidebar nav li a{
     text-decoration: none;
     color: black;
+    /* color: white; */
 }
-.main{
-    /* background-color: yellow; */
-    width: 100vw;
+
+/* .container::before{
     
-}
+    z-index: 2;
+    content: "";
+    width: 75%;
+    top: 0px; 
+    position: absolute; 
+    color: white;
+    height: 75%;
+    opacity: 0.5;
+} */
+
 .container{
     display: flex;  
+    height: 100vh;
+    width: 100vw;
+    /* margin:auto; */
+    /* margin-top: 200px; */
+    background-color: rgb(122, 122, 121);
+    /* background: url("./portfoliobg.jpg") center center no-repeat; */
 }
 .infoContainer{
-    /* background-color: rgb(179, 17, 101); */
-    height: 60vh;
-    width: 80vw;
-    margin: 20vh 10vw;
+    /* background-color: blue;  */
+    height: 60%;
+    width: 80%;
+    /* margin: 20vh 10vw; */
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
 }
 .devInfo{
@@ -48,8 +86,23 @@
     flex-direction: column;
     font-family: 'Source Sans Pro', monospace;
     font-size: 16px;
-    width: 80%;
+    width: 50%;
     height: 100%; 
+    /* background-color: red; */
+}
+.devPic{
+    display: inline;
+    height: 100%;
+    width:50%;
+    background-color: red;
+    justify-content: center;
+    z-index: 2;
+    font-size: 200px;
+}
+.devPic img{
+    width: 100%;
+    height: 100%;
+    display: inline;
 }
 .hello{
   font-size: 3em;
@@ -90,14 +143,7 @@
     background-color: white;
     color: dodgerblue;
 }
-.devPic{
-    display: inline;
-}
-.devPic img{
-    width: 100%;
-    height: 100%;
-    /* display: inline; */
-}
+
 .contactform{
     padding: 0 34px;
     /* padding-top: 144px; */
@@ -237,7 +283,7 @@ p{
 @media screen and (min-width: 0) and (max-width:1615px){
 
     .devPic{
-      display: none;
+      /* display: none; */
     }
     /* .sidebarGo{
         transform: translate(-443px 0px);
