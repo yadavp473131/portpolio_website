@@ -12,7 +12,7 @@
     align-items: center;
     justify-content: center;
     /* max-width: 80%; */
-    margin:50px 0px;
+    /* margin:50px 0px; */
     font-family: 'Ubuntu', sans-serif;
 }
 .section-left{
@@ -51,8 +51,9 @@
     border: 2px solid rgb(239, 226, 226);
     border-radius: 6px;
     cursor: pointer;
-    background: rgb(13, 13, 56);
+    background: rgb(8, 3, 16);
     color: white;
+    text-decoration: none;
 }
 .contact{
     background-color: rgb(8, 3, 16);
@@ -113,6 +114,12 @@
     .rightNav{
         text-align: center;
     }
+    .thirdSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .thirdSection h1{
     
         text-align: center;
@@ -144,10 +151,12 @@
     }
    
     .projects{
+        display: flex;
         flex-direction: column-reverse;
         justify-content: center;
         padding:10px;
-        
+        align-items: center;
+        margin:0px auto;
     }
     .text-big{
         text-align: center;
@@ -164,5 +173,6 @@
     }
     .btn2{
       margin-left: 30vw;
+      /* margin:0 auto; */
     }
 }
