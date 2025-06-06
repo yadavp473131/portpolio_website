@@ -1,0 +1,222 @@
+* {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(8, 3, 16);
+            color: white;
+            font-family: "Poppins", sans-serif;
+            /* width: 90vw; */
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(2, 2, 61);
+            /* width: 100vw; */
+            
+            
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+
+            color: white;
+        }
+
+        nav ul li a:hover {
+            font-size: 1.01rem;
+            color: rgb(182, 182, 244);
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 15vh 0;
+            align-items: center;
+        }
+
+        .firstSection>div {
+            width: 40%;
+        }
+
+        .leftSection {
+
+            font-size: 3rem;
+        }
+        .leftSection .buttons{
+                 padding:0 15px;
+        }
+        .leftSection .btn{
+           padding: 12px;
+            font-size: 20px;
+            color: white;
+            background: rgb(13, 13, 56);
+            border: 2px solid white;
+            border-radius: 6px;
+            cursor:pointer;
+        }
+
+        .rightSection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: rgb(136, 17, 240);
+        }
+
+        #element {
+            color: rgb(136, 17, 240);
+        }
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+            height: 60vh;
+        }
+        .secondSection h1{
+            font-size: 1.9rem;
+        }
+        main hr{
+            border:0px;
+            background: #9c97f1;
+            height: 1.2px;
+            margin:40px 84px;
+        }
+        .text-gray{
+            color:gray;
+        }
+        .secondSection .box{
+            background: white;
+            width:80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+        .secondSection .vertical{
+               height: 93px;
+               width: 1px;
+               background-color: white;
+               margin: 0 8vw;
+        }
+        .image-top{
+            width:23px;
+            position:relative;
+            top: -32px;
+            left:-9px;
+        }
+        .vertical-title{
+               position: relative;
+               top: 75px;
+               width: 150px;
+        }
+        .vertical-desc{
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+
+        footer{
+            background-color: #0e0e1a;
+            
+        }
+        .footer{
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+        .footer ul{
+            list-style: none;
+        }
+        .footer > div{
+            width: 223px;
+        }
+        footer .footer-rights{
+            text-align: center;
+            color:gray;
+            padding : 12px 0;
+        }
+        .footer-first p{
+            padding: 10px 0px;
+            font-size: 10px;
+        }
+        .footer-second ul li{
+            margin: 20px 0;
+
+        }
+        @media screen and (max-width:1270px){
+           
+            .box{
+                flex-direction: column;
+            }
+            .secondSection{
+                height: 140vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100vw;
+            }
+            .secondSection .box{
+                width: 50vw;
+            }
+            .secondSection .vertical{
+                height: unset;
+                
+            }
+            .vertical-title, .vertical-desc{
+                left: 45px;
+            }
+           
+            .firstSection{
+                flex-direction: column-reverse;
+            }
+            nav{
+                flex-direction: column;
+            }
+            .leftSection{
+                width:100% !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .rightSection{
+                width:500px !important;
+                display: flex;
+                justify-content: center;
+            }
+            .rightSection img{
+                width: 45vw;
+            }
+            .image-top{
+                top: 122px;
+            }
+            
+            body{
+                min-width: fit-content;
+            }
+            footer{
+                width: 100vw;
+            }
+            
+        }
+        
