@@ -19,9 +19,7 @@ nav {
     align-items: center;
     height: 80px;
     background-color: rgb(2, 2, 61);
-    /* width: 100vw; */
-
-
+    width: 100vw;
 }
 
 nav ul {
@@ -69,7 +67,7 @@ nav ul li a:hover {
 }
 
 .leftSection .buttons {
-    padding: 0 15px;
+    padding: 0px 15px;
 }
 
 .leftSection .btn {
@@ -98,8 +96,8 @@ nav ul li a:hover {
 .secondSection {
     max-width: 80vw;
     margin: auto;
-    height: 40vh;
-
+    height: 50vh;
+    min-height: 380px;
 }
 
 .secondSection h1 {
@@ -153,6 +151,111 @@ main hr {
     width: 150px;
     font-size: 9px;
 }
+    
+.thirdSection{
+            max-width: 80vw;
+            margin: auto;
+            /* height: 190vh; */
+}
+.thirdSection h1{
+            font-size: 1.9rem;
+        }
+.projects{
+    /* height: 400px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* max-width: 80%; */
+    /* margin:50px 0px; */
+    font-family: 'Ubuntu', sans-serif;
+}
+.section-left{
+    flex-direction: row-reverse;
+}
+.paras{
+  padding: 0 48px;
+}
+.ubuntu-medium {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.sectionTag{
+    padding: 16px 0;
+}
+.text-big{
+    font-size: 20px;
+    margin: 20px 0px;
+}
+.sectionsubTag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.text-small{
+    font-size: 15px;
+    margin: 20px 0px;
+}
+.thumbnail img{
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 25px;;
+}
+.btn2{
+    padding: 10px;
+    border: 2px solid rgb(239, 226, 226);
+    border-radius: 6px;
+    cursor: pointer;
+    background: rgb(8, 3, 16);
+    color: white;
+    text-decoration: none;
+}
+.contact{
+    background-color: rgb(8, 3, 16);
+    height:650px;
+    
+}
+.text-center{
+    text-align: center;
+    margin: 30px 0px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 35px;
+    /* background-color: red; */
+}
+.text-center2{
+    text-align: center;
+    margin: 10px auto;
+    font-family: 'Ubuntu', sans-serif;
+    /* font-size: 35px; */
+    /* background-color: red; */
+}
+.form{
+    max-width:65%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form-input{
+  width: 100%;
+  font-size: 20px;
+  border: 2px solid rgb(73, 68, 68);
+  border-radius: 6px;
+  margin: 15px 0;
+  padding: 5px 3px;
+
+}
+.text-footer{
+    text-align: center;
+    padding: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    /* font-size: 35px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
 
 footer {
     background-color: #0e0e1a;
@@ -196,85 +299,3 @@ footer .footer-rights {
     font-size: 20px;
     text-align: center;
 } 
-@media screen and (max-width:1270px) {
-    body {
-       width: 100vw;
-        min-width: fit-content;
-    }
-
-    .box {
-        flex-direction: column;
-    }
-
-    .secondSection {
-        height: 110vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        /* width: 80vw; */
-
-    }
-
-    .secondSection .box {
-        width: 50vw;
-    }
-
-    .secondSection .vertical {
-        height: unset;
-
-    }
-
-    .vertical-title,
-    .vertical-desc {
-        left: 45px;
-    }
-
-    .firstSection {
-        flex-direction: column-reverse;
-    }
-
-    nav {
-        flex-direction: column;
-    }
-
-    .leftSection {
-        width: 100% !important;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .leftSection>div {
-        text-align: center;
-    }
-
-    .rightSection {
-        width: 500px !important;
-        display: flex;
-        justify-content: center;
-    }
-
-    .rightSection img {
-        width: 45vw;
-    }
-
-    .image-top {
-        top: 122px;
-    }
-
-    
-
-    footer {
-        width: 100vw;
-    }
-
-}
-@media screen and (max-width:896px) {
-    .footer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}

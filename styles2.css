@@ -1,110 +1,77 @@
 
-.thirdSection{
-            max-width: 80vw;
-            margin: auto;
-            /* height: 190vh; */
-}
-.thirdSection h1{
-            font-size: 1.9rem;
-        }
-.projects{
-    /* height: 400px; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* max-width: 80%; */
-    /* margin:50px 0px; */
-    font-family: 'Ubuntu', sans-serif;
-}
-.section-left{
-    flex-direction: row-reverse;
-}
-.paras{
-  padding: 0 48px;
-}
-.ubuntu-medium {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-.sectionTag{
-    padding: 16px 0;
-}
-.text-big{
-    font-size: 20px;
-    margin: 20px 0px;
-}
-.sectionsubTag{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+@media only screen and (max-width:900px){
+
+    body {
+       width: 100vw;
+        min-width: fit-content;
+    }
+
     
-}
-.text-small{
-    font-size: 15px;
-    margin: 20px 0px;
-}
-.thumbnail img{
-    width: 400px;
-    border: 2px solid black;
-    border-radius: 25px;;
-}
-.btn2{
-    padding: 10px;
-    border: 2px solid rgb(239, 226, 226);
-    border-radius: 6px;
-    cursor: pointer;
-    background: rgb(8, 3, 16);
-    color: white;
-    text-decoration: none;
-}
-.contact{
-    background-color: rgb(8, 3, 16);
-    height:650px;
+    .firstSection {
+        flex-direction: column-reverse;
+        width: 100vw;
+        margin: 10vh 0;
+    }
+
     
-}
-.text-center{
-    text-align: center;
-    margin: 30px 0px;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 35px;
-    /* background-color: red; */
-}
-.text-center2{
-    text-align: center;
-    margin: 10px auto;
-    font-family: 'Ubuntu', sans-serif;
-    /* font-size: 35px; */
-    /* background-color: red; */
-}
-.form{
-    max-width:65%;
-    margin: 0px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.form-input{
-  width: 100%;
-  font-size: 20px;
-  border: 2px solid rgb(73, 68, 68);
-  border-radius: 6px;
-  margin: 15px 0;
-  padding: 5px 3px;
 
-}
-.text-footer{
-    text-align: center;
-    padding: 30px;
-    font-family: 'Ubuntu', sans-serif;
-    /* font-size: 35px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
+    .leftSection {
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .leftSection>div {
+        text-align: center;
+    }
+
+    .rightSection {
+        width: 500px !important;
+        display: flex;
+        justify-content: center;
+    }
+
+    .rightSection img {
+        width: 45vw;
+    }
+
+    .image-top {
+        top: 122px;
+    }
+
+    .secondSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* width: 80vw; */
+        height: 950px;
+    }
+    .secondSection .box {
+        width: 50vw;
+        flex-direction: column;
+    }
+
+    .secondSection .vertical {
+        height: unset;
+
+    }
+
+    .vertical-title,
+    .vertical-desc {
+        left: 45px;
+    }
 
 
-@media only screen and (max-width:1078px){
-    .navbar{
+    footer {
+        width: 100vw;
+    }
+
+
+
+    /* .navbar{
         flex-direction: column;
         transition: all 0.7s ease-out;
         height: 400px;
@@ -114,7 +81,7 @@
     }
     .rightNav{
         text-align: center;
-    }
+    } */
     .thirdSection{
         display: flex;
         flex-direction: column;
@@ -126,13 +93,13 @@
         text-align: center;
     }
     
-    .box-main{
+    /* .box-main{
         flex-direction: column-reverse;
         max-width: 100%;
-        /* justify-content: center; */
+        justify-content: center;
     }
     .firstHalf{
-        /* justify-content: center; */
+        justify-content: center;
         margin:auto;
     }
     .secondHalf{
@@ -149,7 +116,7 @@
     }
     .v-class-resp{
         opacity: 0;
-    }
+    } */
    
     .projects{
         display: flex;
@@ -175,5 +142,60 @@
     .btn2{
       margin-left: 30vw;
       /* margin:0 auto; */
+    }
+    footer .footer{
+        justify-content: space-evenly;
+    }
+}
+@media screen and (max-width:645px) {
+   nav {
+        flex-direction: column;
+        height: 60px;
+    }
+    nav ul li{
+        margin:0px 10px;
+        
+    }
+    .left{
+        font-size:0.8rem ;
+    }
+    .right{
+        font-size: 0.6rem;
+    }
+    .leftSection{
+        font-size: 1.5rem;
+    }
+    .leftSection .buttons{
+        font-size: 1rem;
+    }
+    .leftSection .btn{
+        font-size: 15px;
+        padding: 8px;
+    }
+    .rightSection {
+        width: 50vw !important;
+        display: flex;
+        justify-content: center;
+    }
+
+    .rightSection img {
+        width: 50vw;
+    }
+   
+    .thumbnail{
+    
+        display: flex;
+        justify-content: center;
+    }
+    .thumbnail img{
+        width: 80%;
+    }
+    footer {
+        width: 100vw;
+    }
+    footer .footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
