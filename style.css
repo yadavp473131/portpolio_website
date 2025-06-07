@@ -10,7 +10,7 @@ body {
     color: white;
     font-family: "Poppins", sans-serif;
     /* width: 50vw; */
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 nav {
@@ -98,7 +98,7 @@ nav ul li a:hover {
 .secondSection {
     max-width: 80vw;
     margin: auto;
-    height: 60vh;
+    height: 40vh;
 
 }
 
@@ -207,7 +207,7 @@ footer .footer-rights {
     }
 
     .secondSection {
-        height: 140vh;
+        height: 110vh;
         display: flex;
         flex-direction: column;
         align-items: center;
