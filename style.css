@@ -187,7 +187,7 @@ footer .footer-rights {
 .footer-first p {
     padding: 10px 0px;
     font-size: 20px;
-    /* text-align: center; */
+    text-align: center;
     margin: 10px auto;
 }
 
@@ -195,8 +195,7 @@ footer .footer-rights {
     margin: 10px 20px;
     font-size: 20px;
     text-align: center;
-}
-
+} 
 @media screen and (max-width:1270px) {
     body {
        width: 100vw;
